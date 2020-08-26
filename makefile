@@ -9,6 +9,9 @@ run:
 	-v /app/node_modules \
 	typescript-tests $(c)
 
+test:
+	make run c="npm run test"
+
 update:
 	make run c="npm update"
 
