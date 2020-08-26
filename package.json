@@ -2,7 +2,8 @@
   "name": "typescript-tests",
   "private": true,
   "scripts": {
-    "develop": "jest --watchAll"
+    "develop": "jest --watchAll",
+    "test": "jest"
   },
   "devDependencies": {
     "@tsconfig/node12": "^1.0.7",
