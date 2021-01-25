@@ -4,7 +4,6 @@
   "scripts": {
     "dev": "develop",
     "develop": "nodemon",
-    "get-stats": "ts-node index.ts",
     "test:dev": "jest --watchAll",
     "test": "jest"
   },
