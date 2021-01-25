@@ -1,21 +1,21 @@
 all: run
 
 build:
-	docker build . -t typescript-tests $(c)
+	docker build -t typescript-starter .
 
-run:
+run: build
 	docker run --rm -it \
-	--name typescript-tests \
+	--name typescript-starter \
 	-p 8080:8080 \
 	-v `pwd`:/app \
 	-v /app/node_modules \
-	typescript-tests $(c)
+	typescript-starter $(c)
+
+develop:
+	make run c="npm run develop"
+
+test_develop:
+	make run c="npm run test:dev"
 
 test:
 	make run c="npm run test"
-
-update:
-	make run c="npm update"
-
-audit-fix:
-	make run c="npm audit fix"

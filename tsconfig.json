@@ -1,5 +1,6 @@
 {
-    "extends": "@tsconfig/node12/tsconfig.json",
-    "include": ["src/**/*"],
-    "outDir": "dist",
-  }
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "include": ["src/**/*", "spec/**/.*", "index.ts"],
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"],
+  "outDir": "dist",
+}

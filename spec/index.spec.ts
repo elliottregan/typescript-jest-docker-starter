@@ -1,5 +1,5 @@
 
-import { sum } from "../index";
+import { sum } from "../src";
 
 describe("sum", () => {
   it("sums two numbers", () => {
