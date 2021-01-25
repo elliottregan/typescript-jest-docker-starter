@@ -8,7 +8,6 @@ run: build
 	--name typescript-starter \
 	-p 8080:8080 \
 	-v `pwd`:/app \
-	-v /app/node_modules \
 	typescript-starter $(c)
 
 develop:

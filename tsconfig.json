@@ -1,6 +1,6 @@
 {
   "extends": "@tsconfig/node14/tsconfig.json",
-  "include": ["src/**/*", "spec/**/.*", "index.ts"],
+  "include": ["src/**/*", "spec/**/.*", "index.ts", "spec"],
   "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"],
   "outDir": "dist",
 }
