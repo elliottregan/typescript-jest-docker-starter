@@ -1,9 +1,10 @@
 {
   "name": "typescript-starter",
   "private": true,
+  "type":"module",
   "scripts": {
-    "dev": "develop",
-    "develop": "nodemon",
+    "dev": "npm run develop",
+    "develop": "nodemon index.ts",
     "test:dev": "jest --watchAll",
     "test": "jest"
   },

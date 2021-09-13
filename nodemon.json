@@ -1,6 +1,8 @@
 {
   "ignore": ["**/*.test.ts", "**/*.spec.ts", "node_modules"],
   "watch": ["index.ts", "src"],
-  "exec": "npm run get-stats",
-  "ext": "ts"
+  "ext": "ts",
+  "execMap": {
+    "ts": "node --experimental-specifier-resolution=node --loader ts-node/esm"
+  }
 }

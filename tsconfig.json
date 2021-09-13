@@ -1,6 +1,13 @@
 {
-  "extends": "@tsconfig/node14/tsconfig.json",
+  "extends": "@tsconfig/node16/tsconfig.json",
   "include": ["src/**/*", "spec/**/.*", "index.ts", "spec"],
   "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"],
-  "outDir": "dist",
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": ["es2020"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ES2020",
+    "esModuleInterop": true,
+  }
 }
