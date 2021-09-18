@@ -4,5 +4,9 @@
   "ext": "ts",
   "execMap": {
     "ts": "node --experimental-specifier-resolution=node --loader ts-node/esm"
+  },
+  "verbose": true,
+  "env": {
+    "TS_NODE_PROJECT": "./tsconfig.json"
   }
 }

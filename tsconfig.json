@@ -1,7 +1,22 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
-  "include": ["src/**/*", "spec/**/.*", "index.ts", "spec"],
+  "include": ["./global.d.ts"],
+  "files": ["index.ts"],
   "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"],
+  // Most ts-node options can be specified here using their programmatic names.
+  "ts-node": {
+    // It is faster to skip typechecking.
+    // Remove if you want ts-node to do typechecking.
+    "transpileOnly": true,
+
+    "files": true,
+
+    "compilerOptions": {
+      // compilerOptions specified here will override those declared below,
+      // but *only* in ts-node.  Useful if you want ts-node and tsc to use
+      // different options with a single tsconfig.json.
+    }
+  },
   "compilerOptions": {
     "outDir": "dist",
     "lib": ["es2020"],
@@ -9,5 +24,6 @@
     "moduleResolution": "node",
     "target": "ES2020",
     "esModuleInterop": true,
+    "declaration": true,
   }
 }
