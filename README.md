@@ -1,4 +1,4 @@
-# T ypescript Jest Docker Base
+# Typescript Jest Docker Base
  A starter environment for Typescript projects with automated tests using Jest.
 
 If you have Node installed on your system, you can run this directly with npm commands (found in package.json), or you can use the Docker environment to get up an running on any system.
