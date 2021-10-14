@@ -18,3 +18,6 @@ test_develop:
 
 test:
 	make run c="npm run test"
+
+update:
+	make run c="npm update"
