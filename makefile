@@ -21,3 +21,6 @@ test:
 
 update:
 	make run c="npm update"
+
+lint:
+	make run c="npm run lint"
